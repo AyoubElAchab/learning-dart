@@ -15,27 +15,9 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor : Colors.red[600],
       ),
-      body: Center(
-          child : ElevatedButton.icon (
-            onPressed : () {
-              print('you clicked me');
-            },
-            icon : Icon(
-              Icons.mail,
-            ),
-            label : Text('click here'),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.amber, // Sets the background color
-            ),
-          ),
-          // child: Icon(
-          //   Icons.airport_shuttle,
-          //   color : Colors.lightBlue,
-          //   size : 50.0,
-          // ),
-
-          // child: Image.asset('assets/img-2.jpg'),
-          // child: Text('ayoub'),
+      body: Padding(
+        padding : EdgeInsets.all(60.0),
+        child : Text('hello world'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
