@@ -15,31 +15,35 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor : Colors.red[600],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body:Row(
         children: [
-          Row(
-            children: [
-              Text('hello '),
-              Text('world'),
-
-            ],
+          Expanded(
+            flex : 3,
+            child : Image.asset('assets/img-2.jpg'),
           ),
-          Container(
-            padding : EdgeInsets.all(20.0),
-            color : Colors.cyan,
-            child : Text('one'),
+          Expanded(
+            flex : 1,
+            child: Container(
+              padding : EdgeInsets.all(30.0),
+              child: Text('1'),
+              color: Colors.cyan
+            ),
           ),
-          Container(
-            padding : EdgeInsets.all(30.0),
-            color : Colors.pinkAccent,
-            child : Text('two'),
+          Expanded(
+            flex : 1,
+            child: Container(
+              padding : EdgeInsets.all(30.0),
+              child: Text('2'),
+              color: Colors.pinkAccent
+            ),
           ),
-          Container(
-            padding : EdgeInsets.all(40.0),
-            color : Colors.amber,
-            child : Text('three'),
+          Expanded(
+            flex : 1,
+            child: Container(
+              padding : EdgeInsets.all(30.0),
+              child: Text('3'),
+              color: Colors.amber
+            ),
           ),
         ],
       ),
